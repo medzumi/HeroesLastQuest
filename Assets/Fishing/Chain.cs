@@ -9,11 +9,25 @@ namespace Fishing
         [SerializeField] private LineRenderer _lineRenderer;
 
         [SerializeField] private ChainElement _characterJoint;
-        [SerializeField] private CharacterJoint _start;
-        [SerializeField] private Rigidbody _end;
+        [SerializeField] private Transform _start;
+        [SerializeField] private DistanceJoint3D _end;
+
+        public float RigidbodyMass = 1f;
+        public float ColliderRadius = 0.1f;
+        public float JointSpring = 0.1f;
+        public float JointDamper = 5f;
+        public Vector3 RotationOffset;
+        public Vector3 PositionOffset;
+
+        protected List<Transform> CopySource;
+        protected List<Transform> CopyDestination;
+
+        protected static GameObject RigidBodyContainer;
 
         private readonly Stack<ChainElement> _pool = new Stack<ChainElement>();
         private readonly Stack<ChainElement> _activeJointStack = new Stack<ChainElement>();
+
+        private ChainElement _constantChainElement;
 
         [SerializeField] private float _length = 0;
 
@@ -29,25 +43,24 @@ namespace Fishing
 
         private void SetLength(float value)
         {
-            var newCount = Mathf.FloorToInt(value / _characterJoint.CharacterJoint.connectedAnchor.magnitude);
+            var newCount = Mathf.FloorToInt(value / _characterJoint.CharacterJoint.Distance);
             for (int i = 0; i < newCount - _activeJointStack.Count; i++)
             {
                 var newChainElement = GetChainelement();
                 newChainElement.gameObject.SetActive(true);
-                _start.connectedBody = newChainElement.Rigidbody;
-                newChainElement.CharacterJoint.connectedBody =
-                    _activeJointStack.Count == 0 ? _end : _activeJointStack.Peek().Rigidbody;
+                _end.ConnectedRigidbody = newChainElement.Rigidbody.transform;
+                newChainElement.CharacterJoint.ConnectedRigidbody =
+                    _activeJointStack.Count == 0 ? _start : _activeJointStack.Peek().Rigidbody.transform;
                 newChainElement.Rigidbody.position =
-                    (_start.transform.position + newChainElement.CharacterJoint.connectedBody.position) / 2f;
+                    (_start.transform.position + newChainElement.CharacterJoint.ConnectedRigidbody.position) / 2f;
                 _activeJointStack.Push(newChainElement);
             }
             for (int i = 0; i < _activeJointStack.Count - newCount; i++)
             {
                 var toDeleteJoint = _activeJointStack.Pop();
-                _start.connectedBody = _activeJointStack.Count == 0 ? _end : _activeJointStack.Peek().Rigidbody;
+                _end.ConnectedRigidbody = _activeJointStack.Count == 0 ? _start : _activeJointStack.Peek().Rigidbody.transform;
                 toDeleteJoint.gameObject.SetActive(false);
                 _pool.Push(toDeleteJoint);
-                //todo deleting
             }
         }
 
@@ -56,12 +69,12 @@ namespace Fishing
             var linePointCount = 2 + _activeJointStack.Count;
             _lineRenderer.positionCount = linePointCount;
             _lineRenderer.SetPosition(0, _start.transform.position);
-            _lineRenderer.SetPosition(linePointCount - 1, _end.position);
-            var index = 1;
+            _lineRenderer.SetPosition(linePointCount - 1, _end.transform.position);
+            var index = linePointCount - 2;
             foreach (var chainElement in _activeJointStack)
             {
                 _lineRenderer.SetPosition(index, chainElement.Rigidbody.position);
-                index++;
+                index--;
             }
         }
 
@@ -77,6 +90,7 @@ namespace Fishing
                 _pool.Push(Instantiate(_characterJoint, transform));
             }
 
+            _end.ConnectedRigidbody = _start;
             SetLength(_length);
         }
 
