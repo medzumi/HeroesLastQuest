@@ -1,18 +1,19 @@
 ﻿using System;
+using Fishing;
 using UnityEngine;
 
 [Serializable]
-public class FishingIdleState : IState
+public class FishingIdleState : AbstractState
 {
-    [SerializeField] private string _key;
     [SerializeField] private string _nextStateKey;
     [SerializeField] private Animator _animator;
     [SerializeField] private string _animatorIdleKey;
     [SerializeField] private Rigidbody _swimmer;
+    [SerializeField] private Transform _rod;
     [SerializeField] Transform _aim;
-    public string Key => _key;
-    
-    public string Update()
+    [SerializeField] private Transform _defaultRodRot;
+
+    public override string Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -20,19 +21,20 @@ public class FishingIdleState : IState
         }
         else
         {
-            return _key;
+            return Key;
         }
     }
 
-    public void Enter()
+    public override void Enter()
     {
+        _rod.rotation = _defaultRodRot.rotation;
         _swimmer.constraints = RigidbodyConstraints.FreezePositionY;
-        _swimmer.position = _aim.position;
-        _swimmer.rotation = _aim.rotation;
+        _swimmer.transform.position = _aim.position;
+        _swimmer.transform.rotation = _aim.rotation;
         _animator.SetBool(_animatorIdleKey, true);
     }
 
-    public void Exit()
+    public override void Exit()
     {
         _animator.SetBool(_animatorIdleKey, false);
     }

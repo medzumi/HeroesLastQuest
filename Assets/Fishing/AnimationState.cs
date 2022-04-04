@@ -1,25 +1,23 @@
 ﻿using System;
+using Fishing;
 using UnityEngine;
 
 [Serializable]
-public class AnimationState : IState
+public class AnimationState : AbstractState
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private string _endAnimationKey;
     [SerializeField] private string _nextKey;
-    [SerializeField] private string _key;
 
     private string _returnableKey;
-        
-    public string Key => _key;
-    public string Update()
+    public override string Update()
     {
         return _returnableKey;
     }
 
-    public void Enter()
+    public override void Enter()
     {
-        _returnableKey = _key;
+        _returnableKey = Key;
         _animator
             .gameObject
             .GetOrCreateComponent<AnimatorListener>()
@@ -34,7 +32,7 @@ public class AnimationState : IState
         }
     }
 
-    public void Exit()
+    public override void Exit()
     {
         _animator
             .gameObject

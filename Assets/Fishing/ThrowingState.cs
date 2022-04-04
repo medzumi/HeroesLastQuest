@@ -4,7 +4,7 @@ using Fishing;
 using UnityEngine;
 
 [Serializable]
-public class ThrowingState : IState
+public class ThrowingState : AbstractState
 {
     private enum ThrowingStates
     {
@@ -14,7 +14,6 @@ public class ThrowingState : IState
         Error
     }
     
-    [SerializeField] private string _key;
     [SerializeField] private string _nextStateKey;
     [SerializeField] private string _resetStateKey;
 
@@ -22,15 +21,13 @@ public class ThrowingState : IState
     [SerializeField] private Rigidbody _swimmer;
     [SerializeField] private GameObjectData _gameObjectData;
 
-    [SerializeField] private float _minForce;
-    [SerializeField] private float _maxForce;
-    
+    [SerializeField] private FisherData _fisherData;
+
     private int _layerId;
     private ThrowingStates _state;
 
     private Coroutine _lengthCoroutine;
-    public string Key => _key;
-    public string Update()
+    public override string Update()
     {
         switch (_state)
         {
@@ -42,10 +39,10 @@ public class ThrowingState : IState
             case ThrowingStates.Earth:
                 return _resetStateKey;
         }
-        return _key;
+        return Key;
     }
 
-    public void Enter()
+    public override void Enter()
     {
         _swimmer.constraints = RigidbodyConstraints.None;
         _layerId = LayerMask.NameToLayer("Water");
@@ -57,7 +54,7 @@ public class ThrowingState : IState
         _state = ThrowingStates.Flying;
         var forcePercentage = _gameObjectData.ReadData<float>("ThrowForce");
         _swimmer.position = _aim.transform.position;
-        _swimmer.AddForce(_aim.transform.forward * (_minForce + (_maxForce - _minForce) * forcePercentage));
+        _swimmer.AddForce(_aim.transform.forward * (_fisherData.MinThrowForce + (_fisherData.MaxThrowForce - _fisherData.MinThrowForce) * forcePercentage));
     }
 
     private void TriggerExitHandler(GameObject obj)
@@ -73,11 +70,34 @@ public class ThrowingState : IState
         }
     }
 
-    public void Exit()
+    public override void Exit()
     {
         _swimmer.gameObject.GetOrCreateComponent<CollisionEnterHandler>()
             .OnTrigger -= TriggerEnterHandler;
         _swimmer.gameObject.GetOrCreateComponent<TriggerExitHandler>()
             .OnTrigger -= TriggerExitHandler;
+    }
+}
+
+[Serializable]
+public class DebugState : IState
+{
+    [SerializeField] private string _key;
+    [SerializeField] private string _nextKey;
+
+    public string Key => _key;
+    public string Update()
+    {
+        return _nextKey;
+    }
+
+    public void Enter()
+    {
+        Debug.LogError($"Enter to {_key}");
+    }
+
+    public void Exit()
+    {
+        Debug.LogError($"Exit from {_key} to {_nextKey}");
     }
 }
