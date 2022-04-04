@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: QuestAsset
   m_EditorClassIdentifier: 
   InProgressQuest:
-  - NameQuest: "\u041A\u043E\u043D\u0447\u0438\u0442\u0435 \u0438\u0433\u0440\u0443"
+  - NameQuest: Every journey comes to an end
     IdQuest: 1
-    DescriptionQuest: "\u042D\u0442\u043E \u043A\u043E\u043D\u0435\u0446-\u0445\u0443\u0435\u0446
-      \u0431\u043B\u0430 \u0431\u043B\u0430 \u0431\u043B\u0430"
+    DescriptionQuest: 
     SecondDescriptionQuest: "\u041F\u0440\u043E\u0439\u0434\u0435\u043D\u043E"
     QuestEndeText: 
     ValueQuest: 100
     TypeValueQuest: 0
-  - NameQuest: "\u041F\u043E\u0439\u043C\u0430\u0439\u0442\u0435 \u0440\u044B\u0431\u043A\u0443
-      \u0437\u0430\u043B\u0443\u043F\u043A\u0443"
+  - NameQuest: 
     IdQuest: 2
     DescriptionQuest: "\u041B\u0438\u0448\u0438 \u0440\u044B\u0431\u0443 \u0436\u0438\u0437\u043D\u0438"
     SecondDescriptionQuest: "\u043A\u0440\u044F"
@@ -33,10 +31,755 @@ MonoBehaviour:
   Completed:
   - NameQuest: Kill the Dead King
     IdQuest: 0
-    DescriptionQuest: "\u0423\u0431\u0435\u0439\u0442\u0435 \u043A\u043E\u0440\u043E\u043B\u044F
-      \u043C\u043E\u043D\u0441\u0442\u0440\u043E\u0432 \u0431\u043B\u0430 \u0431\u043B\u0430
-      \u0431\u043B\u0430 \u0431\u043B\u0430"
+    DescriptionQuest: The Dead King is dead. Finaly, this world has a chance for
+      peace. I have to tell king Arthur the good news. (Completnig this quest will
+      finish the game. You can never return to the Calamonia, you will never see
+      friends you made here. If you have any unfinished quests, it is highly recommended
+      to finish them, before completing this one.)
     SecondDescriptionQuest: "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043E:"
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the ArchMage
+    IdQuest: 0
+    DescriptionQuest: 'I have chosen the path of magic. It would be a shame to achieve
+      anything but perfection. I''m going to become the most powerfull mage in all
+      the Calamonia. In all the world! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Valiant Champion
+    IdQuest: 0
+    DescriptionQuest: Macelian Court is known for its secrecy, the only way to get
+      to the castle is to win the tournament and became the Valiant Champion. Fortunately
+      to me, the next tournament is going to take place tomorrow.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Tame the Wind
+    IdQuest: 0
+    DescriptionQuest: Sometimes the most powerfull magic is not a magic at all.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Aerodynamics with Otonashi Ayana
+    IdQuest: 0
+    DescriptionQuest: 'Weird creature awaits you on the highest point of this village.
+      She is the one in charge of protecting our Wonderful Everyday. Who is she? '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Into the night
+    IdQuest: 0
+    DescriptionQuest: We had to run from the tavern. All my friends are dead, I have
+      nowhere to go. In time, I will have my revenge. But now I have to survive the
+      night.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Peace negotiations
+    IdQuest: 0
+    DescriptionQuest: War between human nations must end now. Or else we have zero
+      chances to survive the vampire invasion. But human pride can be really hard
+      to deal with.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Ask Jett for healing
+    IdQuest: 0
+    DescriptionQuest: Jett, the local witch with the magic of controlling the wind,
+      has been declining all our prayeres of healing lately. I feel like my job is
+      to find out why.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Jungle Temple
+    IdQuest: 0
+    DescriptionQuest: After weeks of traveling through Mazanian jungle we finaly
+      found it. Southern Temple of Armstrong. There are going to be a lot of traps
+      inside, but I'm confident, we will find what we came for.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: "Check out Sayori\u2019s hanging out skills"
+    IdQuest: 0
+    DescriptionQuest: Sayori is really proud of her acrobatics and asks me to watch
+      her perform it live. People say she does all sorts of tricks without touching
+      the ground at all!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect 100 jars of honey
+    IdQuest: 0
+    DescriptionQuest: With the Bee festival is on the way, Sweet Tamara asked me
+      to get her 100 jars of honey. Honey is sweet, but I hope, my reward will be
+      even sweeter.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Fight on every arena in Calamonia
+    IdQuest: 0
+    DescriptionQuest: I don't need to do it. There is no grand prize, no glory. I'm
+      just feeling fighty.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Kid Ei
+    IdQuest: 0
+    DescriptionQuest: What are these sounds? "Bleep"? "Bloop"? Okay, Tom, put everything
+      in its right place!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Cross the Ocean of Storms
+    IdQuest: 0
+    DescriptionQuest: My journy takes me to the other side of the Ocean. No living
+      man has ever crossed it. Fortumately to me, I am not exactly a living man right
+      now...
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Friends forever
+    IdQuest: 0
+    DescriptionQuest: Sometimes friendship can be intoxicating. Did Charley actually
+      betray me and her family? What made her do it? I need to know the truth.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Save the kitten
+    IdQuest: 0
+    DescriptionQuest: Little Catlyn asked me to find her kitten. Her prophetic gift
+      can be vital to our couse, but right now all she can prophesise is the destiny
+      of her kitten. And it is a grim one, I must not allow this to happen.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Kill God
+    IdQuest: 0
+    DescriptionQuest: Who knew, that some gods can be killed so easily? Or is he
+      even dead? Was he ever alive? Or is it a grande ruse?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Shape of my heart
+    IdQuest: 0
+    DescriptionQuest: I will participate in a greatest cards tournament in the country.
+      But is it a victory am going for? Maybe sometimes you have to loose, to actualy
+      win.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Midnight mass
+    IdQuest: 0
+    DescriptionQuest: Frightning events have happened in the village of Dark Springs.
+      Creatures of the night got loose and local cult has something to do with it.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Ring the Bell of Glory
+    IdQuest: 0
+    DescriptionQuest: Siedged city desperatly needs help. Enemy is already breached
+      the gates. Now only valkiries can help defenders. I need to reach the top of
+      the tower and ring the Bell of Glory!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: "Write Bachelor\u2019s route"
+    IdQuest: 0
+    DescriptionQuest: Three healers have gathered in this far away town to extinguish
+      a weird plague going around. However, two of them are missing. Help us find
+      where Bachelor and Changeling are!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Leader of the City Guards
+    IdQuest: 0
+    DescriptionQuest: 'I have chosen the path of the law. It would be a shame to
+      achieve anything but perfection. I''m going to become the most famous law enforcer
+      in all the Calamonia. In all the world! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Defend Arthur in the court
+    IdQuest: 0
+    DescriptionQuest: Destiny of all the world lies upon shouders of one man. And
+      right now this man is unrightfully accused of stealing some pigs from vilagers!
+      However ridiculus it may seem, we need to clear Arthurs name ASAP as possible.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: "Wait, who\u2019s Basil?"
+    IdQuest: 0
+    DescriptionQuest: Basil is that plant that tastes and smells funny, right? But
+      it also reminds me of a boy... Was someone looking for him, again?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Find the evidence
+    IdQuest: 0
+    DescriptionQuest: I now that Arthur would never do it. Or would he? Only the
+      concrete evidence can put this question to the rest forever.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Follow the moonlight
+    IdQuest: 0
+    DescriptionQuest: Oracle tips were vague. But at least, I now know what she meant
+      by "Follow the moonlight"
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Under the sea
+    IdQuest: 0
+    DescriptionQuest: There is a whole new world under the surface of the sea. "Unsinkable"
+      is somewhere there and the only hope of this world is on board. We will use
+      professor Cassady's magic invention to travel under the water to find it.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Vampire party
+    IdQuest: 0
+    DescriptionQuest: Noone knows how to spend some quality time, like vampires do.
+      I guess, it has something to do with their eternal life...
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Steal the apple
+    IdQuest: 0
+    DescriptionQuest: Seleny wants the proof that I have instincsts of the thief
+      before I can join the guild. She wants me to steal the apple. Alright, I'm
+      going to steal the most heavily guarded apple in the universe!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect 10 spiders
+    IdQuest: 0
+    DescriptionQuest: Susan the alchemist asked me to collect 10 spiders for her
+      potion. But is it really spiders she wants? No, yeah, it's just spiders.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Shepard the herd
+    IdQuest: 0
+    DescriptionQuest: Old Colin went to bring his son. While he's away, I need to
+      protect his ships, which may proof more difficult, than it seems.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Mountain Menace
+    IdQuest: 0
+    DescriptionQuest: Trolls are going to attack the village. I have to stop them
+      at any cost. But may be there is a way to prevent bloodspilling altoghether?I
+      need to learn why are they here, what do they want from viligers.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Dance on the Winter Festival
+    IdQuest: 0
+    DescriptionQuest: Sometimes even the chosen one can relax a little. While Arthur
+      is busy saving the world, I may just dance with Rosy Sue.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Obtain the Demon-Killer
+    IdQuest: 0
+    DescriptionQuest: The ancient legend says about powerfull weapon. If we're going
+      to fight demons in hell, this blade may be of great use.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Flying high
+    IdQuest: 0
+    DescriptionQuest: Another professor Cassady's invention took as above the clouds!
+      Here we learned that skies belongs to bizarre creatures, unlike anything I
+      have ever seen. And this creatures do not like to share thier skies with us.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Help the bookshop owner
+    IdQuest: 0
+    DescriptionQuest: The local bookshop is on the verge of closing. Its owner askes
+      my to help him to keep things afloat. Sometimes all it takes is just a few
+      good deeds done.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Problem with bullies
+    IdQuest: 0
+    DescriptionQuest: Little Anne is being bullied in school. It is a right thing
+      to do to stop it. Or may it be things are not what they seems at first glance?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Save the world with comedy
+    IdQuest: 0
+    DescriptionQuest: 'Local jokester has been going around showing his lighting
+      magic skills like crazy lately. It''s good and all, but should he be joking
+      at a time like this? '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Open the portal to the Nightside
+    IdQuest: 0
+    DescriptionQuest: I'm going to help some friendly vampires to return to thier
+      world. It's not gonna be easy and safe, but it is what friends do.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Chief of all Chiefs
+    IdQuest: 0
+    DescriptionQuest: I may be of different culture, but what stops me from coming
+      to locals of Aramania and becoming thier spiritual leader?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Cooking contest in Honeyroot
+    IdQuest: 0
+    DescriptionQuest: Trevor Smith told me that I can never become cook only by swinging
+      my sword left and right. Time to proof him wrong.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Conjure the spirit of Martin Strout
+    IdQuest: 0
+    DescriptionQuest: The last witness of Lord Topial crimes is dead. It will not
+      stop us.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Pet every dog in Calamonia
+    IdQuest: 0
+    DescriptionQuest: There are dogs in Calamonia and I can pet them. Do I need any
+      more reasons?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Destroy the Desert Temple
+    IdQuest: 0
+    DescriptionQuest: After weeks of treveling through desert we finaly reached our
+      destination - Eastern Temple of Armstrong. It seems, it's magic couses troubles
+      for locals. This time we may not only retrieve the half of Amulet, but we also
+      will have to destroy the temple.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Necromant Supreme
+    IdQuest: 0
+    DescriptionQuest: 'I have chosen the path of necromancy. It would be a shame
+      to achieve anything but perfection. I''m going to become the most powerfull
+      necromant in all the Calamonia. In all the world! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Learn the Secret Technique
+    IdQuest: 0
+    DescriptionQuest: With this ancient knolege I will save certanly the world. But
+      obtaining it will not be easy. Fortunatly, I have friends, who will help me.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Love triangle
+    IdQuest: 0
+    DescriptionQuest: So, Sarah is in love with George, but George is in love with
+      Mathilda and Mathilda can't decide between Luke and Berthold. Berthold has
+      been in love with Sarah, but now he is not sure. Luke and Amily are just friends,
+      or do they? And who is this mysterious Arnold?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect every flower in Calamonia
+    IdQuest: 0
+    DescriptionQuest: Witch of the forest asked me to bring her every flower in Calamonia.
+      I had to ask her, did she mean every kind of flower. But no, every flower in
+      existance. Is it even possible? I guess, there's only one way to find out.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Deal with the werewolf problem
+    IdQuest: 0
+    DescriptionQuest: Werewolfs terrorise viligers of Golden Creek. Or is it the
+      other way around? I can't just walk away from this problem, but I may also
+      need some help from the Nightside...
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: The Spear of Luck
+    IdQuest: 0
+    DescriptionQuest: There is no more respectable art in Fearia than throwing spears.
+      And I need to win spear throwing competion, the fate of the world depends on
+      it. But locals are years of training ahead of me. I may need some special spear...
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Sing the sacred hymn
+    IdQuest: 0
+    DescriptionQuest: Sometimes fighting is not the answear. Sometimes all you need
+      is to sing an ancient sacred hymn.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: The Witch of the Forest
+    IdQuest: 0
+    DescriptionQuest: The only person who can save Arthur's is a mysterious Witch
+      of the Forest. Noone has seen her in hundreds of years. Is she is even alive?
+      Is she even real? She has to be.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the leader of the Warriors Guild
+    IdQuest: 0
+    DescriptionQuest: 'I have chosen the path of might. It would be a shame to achieve
+      anything but perfection. I''m going to become the most powerfull warrior in
+      all the Calamonia. In all the world! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Drunk and deadly
+    IdQuest: 0
+    DescriptionQuest: We have spend some good time with Arthur last night. Maybe,
+      a little too good. Now we have to face the music.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Close the portal to the Nightside
+    IdQuest: 0
+    DescriptionQuest: Vampires are dealt with. But the portal is still open and reinforcements
+      may come any moment. We have to close the portal ASAP. Melody has some idea
+      how we can do it.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Leader of the Church of Light
+    IdQuest: 0
+    DescriptionQuest: 'I have chosen the path of light. It would be a shame to achieve
+      anything but perfection. I''m going to become the most powerfull cleric in
+      all the Calamonia. In all the world! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Train between dimensions
+    IdQuest: 0
+    DescriptionQuest: Portals proofed to be unreliable and dangerous. Now, when we
+      have to visit Nightside again, we decided to try something more modern. Professor
+      Cassady claims he can help us.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Kill the invaders from the Nightside
+    IdQuest: 0
+    DescriptionQuest: Vampires tricked me! How could I be such a fool! If I don't
+      deal with the invaders soon, there will be nothing to save in this world.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Catch 100 fishes in the Blue Lake
+    IdQuest: 0
+    DescriptionQuest: Sometimes it is worth to remember what we are fighting for.
+      Just relax a little and enjoy the fishing in the most calm and beautifull place
+      in Calamonia.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Deal with the succubus
+    IdQuest: 0
+    DescriptionQuest: Dockers found dead, horrible rumors are spreading in the Areagh.
+      Love and death are closer than usual tonight.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect 10 apples for grannies pie
+    IdQuest: 0
+    DescriptionQuest: Granny Smith from Dark Springs wants to bake a pie. Whe asked
+      me to find her 10 apples and I will do it.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Stupid Horse
+    IdQuest: 0
+    DescriptionQuest: Bet your money on a stupid horse.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Clean up the cellar
+    IdQuest: 0
+    DescriptionQuest: Local guard, Arthur, asked me to help him kill rats in the
+      cellar. And while the qust itself is nothing unusual, there is something to
+      this boy.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Cake is a lie
+    IdQuest: 0
+    DescriptionQuest: 'Granny Smith decieved me! Cake was a lie, and now Dark Spings
+      are in a new danger. '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Why are you reading this?
+    IdQuest: 0
+    DescriptionQuest: No, seriously. It's like what, 70th quest? 80th? I am glad
+      that you appreceate our work this much. But I'm also a little concerned about
+      you. Go outside, do some exercise, find someone to talk to.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Arrows and Knees
+    IdQuest: 0
+    DescriptionQuest: Sam pointed out that there are a lot of people with wounded
+      knees. It's almost like there is some archer with sick obsession of shooting
+      people in the knees. And an archer of that skill can be a vital addition to
+      our party.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: The Great Dismal
+    IdQuest: 0
+    DescriptionQuest: Help Bernie catch Acold in a Famine Asylum
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Loveless
+    IdQuest: 0
+    DescriptionQuest: Make Mr.Valentine to stop playing his super noisy lure at Mike's
+      Tavern
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Ride the Lightning
+    IdQuest: 0
+    DescriptionQuest: Some crimes must be punished. But some punishments must not
+      come to be. There is nothing I can do to help James, but mabe I cam relive
+      his suffering somehow.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Shoot This Guy in the Face
+    IdQuest: 0
+    DescriptionQuest: Shoot Sir Bandito in the face + ...but not in the arm + ...but
+      not in the leg + ...but not in the chest
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: "You\u2019ll Cowards Don\u2019t Even Smoke Opium"
+    IdQuest: 0
+    DescriptionQuest: Here's a little something for you busta's... Kill The Peggy
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: No Love in a Deep Web
+    IdQuest: 0
+    DescriptionQuest: Find Andy's clothes in a tavern
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: The Coin Store
+    IdQuest: 0
+    DescriptionQuest: Help Anthony The Needle to find the Fut Edge
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: In the Court of a Crimson Queen
+    IdQuest: 0
+    DescriptionQuest: 'Beat the Giant Titan Michael who was bewitched by the queen
+      Annet. Be careful! His carcass could destroy a few villages when been defeated! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: In the Balloon over the Sea
+    IdQuest: 0
+    DescriptionQuest: Meet the King of Carrot Flowers
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Are You Dead Yet?
+    IdQuest: 0
+    DescriptionQuest: ' Let the Laiho''s spirit rest in peace'
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Who is Chea Boo Pea Tsar?
+    IdQuest: 0
+    DescriptionQuest: You probably should put it in the oven for a 3 minutes and
+      have the nicest meal you could have ever imagined!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Wheelin' and Dealin
+    IdQuest: 0
+    DescriptionQuest: '"With Gavlan, you wheel? You deal! Gah hah!"'
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Parry your ex-boyfriend
+    IdQuest: 0
+    DescriptionQuest: If you're playing as a female character of course.....unless?
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Mix drinks and change lives
+    IdQuest: 0
+    DescriptionQuest: Rumors say it that there is a secret pub that goes by the name
+      of "Vallhalla".
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Knife fight with Greg
+    IdQuest: 0
+    DescriptionQuest: Greg The Fox is awaiting for you where noone else comes. Come,
+      remember the old times and fight the good friend of yours!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: This one bites the dust
+    IdQuest: 0
+    DescriptionQuest: Everything's exploding!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Become the Leader of the Thieves Guild
+    IdQuest: 0
+    DescriptionQuest: I have chosen the path of shadows. It would be a shame to achieve
+      anything but perfection. I'm going to become the most quickhanded thief in
+      all the Calamonia. In all the world!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Fight the bear
+    IdQuest: 0
+    DescriptionQuest: Sometimes it is a matter of fighting the right bear.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Drink in every tavern in Calamonia
+    IdQuest: 0
+    DescriptionQuest: 'Moony Tod challenged me to find the best beer in Areagh. I
+      top it, I''m going to find the best beer in the whole Calamonia! '
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Fighting the Mom with Isaac
+    IdQuest: 0
+    DescriptionQuest: The sacred basement is in need of cleansing and Isaac is in
+      need of help of escaping. May the random of magic objects be with you on the
+      way!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect all the treasure chests
+    IdQuest: 0
+    DescriptionQuest: Pirates oldest custom is to bury treasures in the most inconvinient
+      spots. But they also leave maps to them. Actually, it is not that hard to find
+      them. I'm going to be a rich man.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Journey to Hell
+    IdQuest: 0
+    DescriptionQuest: With the portal open, I can finaly go to Hell. There I will
+      find Jane's soul and return back. It will not be easy.
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Collect three halves of the Amulet of Armstrong
+    IdQuest: 0
+    DescriptionQuest: The legendary Amulet of Armstrong is in reach of my hand. All
+      I have to do is to find all the three halves of it in three parts of the world.
+      With the Amulet of Armstrong I will be unstopable!
+    SecondDescriptionQuest: 'Done:'
+    QuestEndeText: 
+    ValueQuest: 1
+    TypeValueQuest: 1
+  - NameQuest: Touch grass
+    IdQuest: 0
+    DescriptionQuest: Literally...
+    SecondDescriptionQuest: 'Done:'
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
