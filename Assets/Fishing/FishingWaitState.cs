@@ -371,6 +371,7 @@ public class UpState : AbstractState
     [SerializeField] private FisherData _fisherData;
     
     private GameObject _prefab;
+    private FishConfig _fishConfig;
     private int _id;
     public override string Update()
     {
@@ -387,7 +388,7 @@ public class UpState : AbstractState
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            FishPopupController.Singleton.AddFish(_id);
+            FishPopupController.Singleton.AddFish(_fishConfig.FishId);
             _gameObjectData.SetData("Catched", _gameObjectData.ReadData("Catched", 0) + 1);
             return _nextKey;
         }
@@ -398,6 +399,7 @@ public class UpState : AbstractState
     public override void Enter()
     {
         _id = _gameObjectData.ReadData<int>("FishReward");
+        _fishConfig = _fishAsset.listFish[_id];
         var prefab = _fishAsset.listFish[_id].Prefab;
         _prefab = GameObject.Instantiate(prefab, Vector3.zero, Quaternion.identity, _spawnRootTransform);
         _prefab.transform.localPosition = Vector3.zero;
