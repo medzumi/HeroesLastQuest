@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Feature.QuestPopup;
 using Quest.Scrypts.Configs;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Quest.Scrypts.MVC
 {
@@ -101,12 +102,13 @@ namespace Quest.Scrypts.MVC
         {
             if (questViewParameters.QuestConfig.IdQuest == questExitId)
             {
-                
+                SceneManager.LoadScene (sceneName: "Scenes/Ending");
             }
             
             if (questViewParameters.QuestConfig.IdQuest == questFishId)
             {
-                OnChangeActive?.Invoke(false, false);
+                // OnChangeActive?.Invoke(false, false);
+                SceneManager.LoadScene (sceneName: "Scenes/Fishing");
             }
             
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Quest.Scrypts.MVC
 {
@@ -52,7 +53,8 @@ namespace Quest.Scrypts.MVC
 
         private void Close()
         {
-            panel.SetActive(false);
+            // panel.SetActive(false);
+            SceneManager.LoadScene (sceneName: "Scenes/Fishing");
         }
 
         private void ClickQuest(QuestViewParameters obj)
@@ -76,7 +78,6 @@ namespace Quest.Scrypts.MVC
                 view.OnClickTab += ClickTab;
             }
         }
-
 
         private void RepaintInProgress(List<QuestViewParameters> listParameters)
         {
@@ -108,7 +109,7 @@ namespace Quest.Scrypts.MVC
         private void ChangeActive(bool isActive, bool isCanClose)
         {
             panel.SetActive(isActive);
-            closeButton.gameObject.SetActive(isCanClose);
+            // closeButton.gameObject.SetActive(isCanClose);
         }
     }
 
