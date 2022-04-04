@@ -55,7 +55,7 @@ public class AimingState : AbstractState
         }
     }
 
-    public override void Enter()
+    public override void EnterHandler()
     {
         _swimmer.constraints = RigidbodyConstraints.FreezePositionY;
         _throwGameObjectView.SetActive(true);
@@ -64,7 +64,7 @@ public class AimingState : AbstractState
         _animator.SetBool(_animatorAimKey, true);
     }
 
-    public override void Exit()
+    public override void ExitHandler()
     {
         _throwGameObjectView.SetActive(false);
         _animator.SetBool(_animatorAimKey, false);

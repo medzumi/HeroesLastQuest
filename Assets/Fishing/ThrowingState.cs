@@ -42,7 +42,7 @@ public class ThrowingState : AbstractState
         return Key;
     }
 
-    public override void Enter()
+    public override void EnterHandler()
     {
         _swimmer.constraints = RigidbodyConstraints.None;
         _layerId = LayerMask.NameToLayer("Water");
@@ -70,7 +70,7 @@ public class ThrowingState : AbstractState
         }
     }
 
-    public override void Exit()
+    public override void ExitHandler()
     {
         _swimmer.gameObject.GetOrCreateComponent<CollisionEnterHandler>()
             .OnTrigger -= TriggerEnterHandler;
