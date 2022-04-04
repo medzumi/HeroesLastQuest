@@ -17,19 +17,39 @@ MonoBehaviour:
     FishId: 1
     StarFish: 4
     Rare: 0
+    ChanceWeight: 1
+    MinHold: 3
+    MaxHold: 5
+    Prefab: {fileID: 6576395775757146054, guid: dd4850882a12cd04c935a56387ab144f, type: 3}
   - NameFish: "\u041B\u0435\u0432"
     FishId: 2
     StarFish: 5
     Rare: 0
+    ChanceWeight: 1
+    MinHold: 3
+    MaxHold: 5
+    Prefab: {fileID: 3390927973363256267, guid: 022747c530a33b04dba773197c3db779, type: 3}
   - NameFish: "\u041F\u0440\u0430\u0432"
     FishId: 3
     StarFish: 1
     Rare: 0
+    ChanceWeight: 0
+    MinHold: 3
+    MaxHold: 5
+    Prefab: {fileID: 6488010386979331306, guid: d51101cbaffcf28448ad64b5564f14e7, type: 3}
   - NameFish: "\u0410\u043D\u043D\u0430 \u0410\u043D\u0434\u0435\u0435\u0432\u043D\u0430"
     FishId: 4
     StarFish: 2
     Rare: 0
+    ChanceWeight: 1
+    MinHold: 1
+    MaxHold: 2
+    Prefab: {fileID: 4513170694674421111, guid: d44651879a60cf84c8e5acae7e97fc6b, type: 3}
   - NameFish: "\u0417\u043E\u043B\u043E\u0442\u0430\u044F \u0440\u044B\u0431\u043A\u0430"
     FishId: 5
     StarFish: 5
     Rare: 0
+    ChanceWeight: 1
+    MinHold: 3
+    MaxHold: 5
+    Prefab: {fileID: 5337020147738938968, guid: 6a098e667371a5445b14c61675e5ef41, type: 3}
