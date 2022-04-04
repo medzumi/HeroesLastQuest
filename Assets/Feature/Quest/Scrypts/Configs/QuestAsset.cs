@@ -19,6 +19,7 @@ namespace Quest.Scrypts.Configs
         public int IdQuest;
         public string DescriptionQuest;
         public string SecondDescriptionQuest;
+        public string ButtonText;
         public string QuestEndeText;
         public float ValueQuest;
         public TypeValueQuest TypeValueQuest;

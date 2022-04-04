@@ -13,6 +13,9 @@ namespace Quest.Scrypts.MVC
         private Text descriptionQuest;
         [SerializeField]
         private Text secondDescriptionQuest;
+        
+        [SerializeField]
+        private Text buttonText;
 
         [SerializeField]
         private Button buttonQuest;
@@ -43,6 +46,7 @@ namespace Quest.Scrypts.MVC
             descriptionQuest.text = parameters.QuestConfig.DescriptionQuest;
             string valueQuest = "";
             buttonQuest.gameObject.SetActive(isActive);
+            buttonText.text = parameters.QuestConfig.ButtonText;
             if (parameters.QuestConfig.TypeValueQuest == TypeValueQuest.Percent)
             {
                 if (isActive)

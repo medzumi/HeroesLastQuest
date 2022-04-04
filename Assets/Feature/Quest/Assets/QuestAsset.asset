@@ -17,6 +17,7 @@ MonoBehaviour:
     IdQuest: 1
     DescriptionQuest: 
     SecondDescriptionQuest: "\u041F\u0440\u043E\u0439\u0434\u0435\u043D\u043E"
+    ButtonText: Finish the game
     QuestEndeText: 
     ValueQuest: 100
     TypeValueQuest: 0
@@ -24,6 +25,7 @@ MonoBehaviour:
     IdQuest: 2
     DescriptionQuest: "\u041B\u0438\u0448\u0438 \u0440\u044B\u0431\u0443 \u0436\u0438\u0437\u043D\u0438"
     SecondDescriptionQuest: "\u043A\u0440\u044F"
+    ButtonText: To fish
     QuestEndeText: "\u0412\u044B \u043F\u043E\u0439\u043C\u0430\u043B\u0438 \u0440\u044B\u0431\u043A\u0443
       \u0445\u0443\u0435\u044E\u0431\u043A\u0443 \u0438 \u0432\u0441\u0435 \u043F\u0438\u0437\u0434\u0430"
     ValueQuest: 1
@@ -37,6 +39,7 @@ MonoBehaviour:
       friends you made here. If you have any unfinished quests, it is highly recommended
       to finish them, before completing this one.)
     SecondDescriptionQuest: "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043E:"
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -46,6 +49,7 @@ MonoBehaviour:
       anything but perfection. I''m going to become the most powerfull mage in all
       the Calamonia. In all the world! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -55,6 +59,7 @@ MonoBehaviour:
       to the castle is to win the tournament and became the Valiant Champion. Fortunately
       to me, the next tournament is going to take place tomorrow.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -62,6 +67,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Sometimes the most powerfull magic is not a magic at all.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -70,6 +76,7 @@ MonoBehaviour:
     DescriptionQuest: 'Weird creature awaits you on the highest point of this village.
       She is the one in charge of protecting our Wonderful Everyday. Who is she? '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -79,6 +86,7 @@ MonoBehaviour:
       nowhere to go. In time, I will have my revenge. But now I have to survive the
       night.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -88,6 +96,7 @@ MonoBehaviour:
       chances to survive the vampire invasion. But human pride can be really hard
       to deal with.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -97,6 +106,7 @@ MonoBehaviour:
       has been declining all our prayeres of healing lately. I feel like my job is
       to find out why.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -106,6 +116,7 @@ MonoBehaviour:
       found it. Southern Temple of Armstrong. There are going to be a lot of traps
       inside, but I'm confident, we will find what we came for.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -115,6 +126,7 @@ MonoBehaviour:
       her perform it live. People say she does all sorts of tricks without touching
       the ground at all!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -124,6 +136,7 @@ MonoBehaviour:
       to get her 100 jars of honey. Honey is sweet, but I hope, my reward will be
       even sweeter.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -132,6 +145,7 @@ MonoBehaviour:
     DescriptionQuest: I don't need to do it. There is no grand prize, no glory. I'm
       just feeling fighty.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -140,6 +154,7 @@ MonoBehaviour:
     DescriptionQuest: What are these sounds? "Bleep"? "Bloop"? Okay, Tom, put everything
       in its right place!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -149,6 +164,7 @@ MonoBehaviour:
       man has ever crossed it. Fortumately to me, I am not exactly a living man right
       now...
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -157,6 +173,7 @@ MonoBehaviour:
     DescriptionQuest: Sometimes friendship can be intoxicating. Did Charley actually
       betray me and her family? What made her do it? I need to know the truth.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -166,6 +183,7 @@ MonoBehaviour:
       can be vital to our couse, but right now all she can prophesise is the destiny
       of her kitten. And it is a grim one, I must not allow this to happen.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -174,6 +192,7 @@ MonoBehaviour:
     DescriptionQuest: Who knew, that some gods can be killed so easily? Or is he
       even dead? Was he ever alive? Or is it a grande ruse?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -183,6 +202,7 @@ MonoBehaviour:
       But is it a victory am going for? Maybe sometimes you have to loose, to actualy
       win.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -191,6 +211,7 @@ MonoBehaviour:
     DescriptionQuest: Frightning events have happened in the village of Dark Springs.
       Creatures of the night got loose and local cult has something to do with it.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -200,6 +221,7 @@ MonoBehaviour:
       the gates. Now only valkiries can help defenders. I need to reach the top of
       the tower and ring the Bell of Glory!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -209,6 +231,7 @@ MonoBehaviour:
       a weird plague going around. However, two of them are missing. Help us find
       where Bachelor and Changeling are!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -218,6 +241,7 @@ MonoBehaviour:
       achieve anything but perfection. I''m going to become the most famous law enforcer
       in all the Calamonia. In all the world! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -227,6 +251,7 @@ MonoBehaviour:
       right now this man is unrightfully accused of stealing some pigs from vilagers!
       However ridiculus it may seem, we need to clear Arthurs name ASAP as possible.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -235,6 +260,7 @@ MonoBehaviour:
     DescriptionQuest: Basil is that plant that tastes and smells funny, right? But
       it also reminds me of a boy... Was someone looking for him, again?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -243,6 +269,7 @@ MonoBehaviour:
     DescriptionQuest: I now that Arthur would never do it. Or would he? Only the
       concrete evidence can put this question to the rest forever.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -251,6 +278,7 @@ MonoBehaviour:
     DescriptionQuest: Oracle tips were vague. But at least, I now know what she meant
       by "Follow the moonlight"
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -260,6 +288,7 @@ MonoBehaviour:
       is somewhere there and the only hope of this world is on board. We will use
       professor Cassady's magic invention to travel under the water to find it.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -268,6 +297,7 @@ MonoBehaviour:
     DescriptionQuest: Noone knows how to spend some quality time, like vampires do.
       I guess, it has something to do with their eternal life...
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -277,6 +307,7 @@ MonoBehaviour:
       before I can join the guild. She wants me to steal the apple. Alright, I'm
       going to steal the most heavily guarded apple in the universe!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -285,6 +316,7 @@ MonoBehaviour:
     DescriptionQuest: Susan the alchemist asked me to collect 10 spiders for her
       potion. But is it really spiders she wants? No, yeah, it's just spiders.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -293,6 +325,7 @@ MonoBehaviour:
     DescriptionQuest: Old Colin went to bring his son. While he's away, I need to
       protect his ships, which may proof more difficult, than it seems.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -302,6 +335,7 @@ MonoBehaviour:
       at any cost. But may be there is a way to prevent bloodspilling altoghether?I
       need to learn why are they here, what do they want from viligers.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -310,6 +344,7 @@ MonoBehaviour:
     DescriptionQuest: Sometimes even the chosen one can relax a little. While Arthur
       is busy saving the world, I may just dance with Rosy Sue.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -318,6 +353,7 @@ MonoBehaviour:
     DescriptionQuest: The ancient legend says about powerfull weapon. If we're going
       to fight demons in hell, this blade may be of great use.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -327,6 +363,7 @@ MonoBehaviour:
       Here we learned that skies belongs to bizarre creatures, unlike anything I
       have ever seen. And this creatures do not like to share thier skies with us.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -336,6 +373,7 @@ MonoBehaviour:
       my to help him to keep things afloat. Sometimes all it takes is just a few
       good deeds done.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -344,6 +382,7 @@ MonoBehaviour:
     DescriptionQuest: Little Anne is being bullied in school. It is a right thing
       to do to stop it. Or may it be things are not what they seems at first glance?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -353,6 +392,7 @@ MonoBehaviour:
       magic skills like crazy lately. It''s good and all, but should he be joking
       at a time like this? '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -361,6 +401,7 @@ MonoBehaviour:
     DescriptionQuest: I'm going to help some friendly vampires to return to thier
       world. It's not gonna be easy and safe, but it is what friends do.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -369,6 +410,7 @@ MonoBehaviour:
     DescriptionQuest: I may be of different culture, but what stops me from coming
       to locals of Aramania and becoming thier spiritual leader?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -377,6 +419,7 @@ MonoBehaviour:
     DescriptionQuest: Trevor Smith told me that I can never become cook only by swinging
       my sword left and right. Time to proof him wrong.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -385,6 +428,7 @@ MonoBehaviour:
     DescriptionQuest: The last witness of Lord Topial crimes is dead. It will not
       stop us.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -393,6 +437,7 @@ MonoBehaviour:
     DescriptionQuest: There are dogs in Calamonia and I can pet them. Do I need any
       more reasons?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -403,6 +448,7 @@ MonoBehaviour:
       for locals. This time we may not only retrieve the half of Amulet, but we also
       will have to destroy the temple.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -412,6 +458,7 @@ MonoBehaviour:
       to achieve anything but perfection. I''m going to become the most powerfull
       necromant in all the Calamonia. In all the world! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -420,6 +467,7 @@ MonoBehaviour:
     DescriptionQuest: With this ancient knolege I will save certanly the world. But
       obtaining it will not be easy. Fortunatly, I have friends, who will help me.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -430,6 +478,7 @@ MonoBehaviour:
       been in love with Sarah, but now he is not sure. Luke and Amily are just friends,
       or do they? And who is this mysterious Arnold?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -439,6 +488,7 @@ MonoBehaviour:
       I had to ask her, did she mean every kind of flower. But no, every flower in
       existance. Is it even possible? I guess, there's only one way to find out.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -448,6 +498,7 @@ MonoBehaviour:
       other way around? I can't just walk away from this problem, but I may also
       need some help from the Nightside...
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -457,6 +508,7 @@ MonoBehaviour:
       And I need to win spear throwing competion, the fate of the world depends on
       it. But locals are years of training ahead of me. I may need some special spear...
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -465,6 +517,7 @@ MonoBehaviour:
     DescriptionQuest: Sometimes fighting is not the answear. Sometimes all you need
       is to sing an ancient sacred hymn.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -474,6 +527,7 @@ MonoBehaviour:
       of the Forest. Noone has seen her in hundreds of years. Is she is even alive?
       Is she even real? She has to be.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -483,6 +537,7 @@ MonoBehaviour:
       anything but perfection. I''m going to become the most powerfull warrior in
       all the Calamonia. In all the world! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -491,6 +546,7 @@ MonoBehaviour:
     DescriptionQuest: We have spend some good time with Arthur last night. Maybe,
       a little too good. Now we have to face the music.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -500,6 +556,7 @@ MonoBehaviour:
       may come any moment. We have to close the portal ASAP. Melody has some idea
       how we can do it.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -509,6 +566,7 @@ MonoBehaviour:
       anything but perfection. I''m going to become the most powerfull cleric in
       all the Calamonia. In all the world! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -518,6 +576,7 @@ MonoBehaviour:
       have to visit Nightside again, we decided to try something more modern. Professor
       Cassady claims he can help us.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -526,6 +585,7 @@ MonoBehaviour:
     DescriptionQuest: Vampires tricked me! How could I be such a fool! If I don't
       deal with the invaders soon, there will be nothing to save in this world.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -535,6 +595,7 @@ MonoBehaviour:
       Just relax a little and enjoy the fishing in the most calm and beautifull place
       in Calamonia.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -543,6 +604,7 @@ MonoBehaviour:
     DescriptionQuest: Dockers found dead, horrible rumors are spreading in the Areagh.
       Love and death are closer than usual tonight.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -551,6 +613,7 @@ MonoBehaviour:
     DescriptionQuest: Granny Smith from Dark Springs wants to bake a pie. Whe asked
       me to find her 10 apples and I will do it.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -558,6 +621,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Bet your money on a stupid horse.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -567,6 +631,7 @@ MonoBehaviour:
       cellar. And while the qust itself is nothing unusual, there is something to
       this boy.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -575,6 +640,7 @@ MonoBehaviour:
     DescriptionQuest: 'Granny Smith decieved me! Cake was a lie, and now Dark Spings
       are in a new danger. '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -584,6 +650,7 @@ MonoBehaviour:
       that you appreceate our work this much. But I'm also a little concerned about
       you. Go outside, do some exercise, find someone to talk to.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -594,6 +661,7 @@ MonoBehaviour:
       people in the knees. And an archer of that skill can be a vital addition to
       our party.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -601,6 +669,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Help Bernie catch Acold in a Famine Asylum
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -609,6 +678,7 @@ MonoBehaviour:
     DescriptionQuest: Make Mr.Valentine to stop playing his super noisy lure at Mike's
       Tavern
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -618,6 +688,7 @@ MonoBehaviour:
       come to be. There is nothing I can do to help James, but mabe I cam relive
       his suffering somehow.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -626,6 +697,7 @@ MonoBehaviour:
     DescriptionQuest: Shoot Sir Bandito in the face + ...but not in the arm + ...but
       not in the leg + ...but not in the chest
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -633,6 +705,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Here's a little something for you busta's... Kill The Peggy
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -640,6 +713,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Find Andy's clothes in a tavern
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -647,6 +721,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Help Anthony The Needle to find the Fut Edge
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -655,6 +730,7 @@ MonoBehaviour:
     DescriptionQuest: 'Beat the Giant Titan Michael who was bewitched by the queen
       Annet. Be careful! His carcass could destroy a few villages when been defeated! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -662,6 +738,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Meet the King of Carrot Flowers
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -669,6 +746,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: ' Let the Laiho''s spirit rest in peace'
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -677,6 +755,7 @@ MonoBehaviour:
     DescriptionQuest: You probably should put it in the oven for a 3 minutes and
       have the nicest meal you could have ever imagined!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -684,6 +763,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: '"With Gavlan, you wheel? You deal! Gah hah!"'
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -691,6 +771,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: If you're playing as a female character of course.....unless?
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -699,6 +780,7 @@ MonoBehaviour:
     DescriptionQuest: Rumors say it that there is a secret pub that goes by the name
       of "Vallhalla".
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -707,6 +789,7 @@ MonoBehaviour:
     DescriptionQuest: Greg The Fox is awaiting for you where noone else comes. Come,
       remember the old times and fight the good friend of yours!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -714,6 +797,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Everything's exploding!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -723,6 +807,7 @@ MonoBehaviour:
       anything but perfection. I'm going to become the most quickhanded thief in
       all the Calamonia. In all the world!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -730,6 +815,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Sometimes it is a matter of fighting the right bear.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -738,6 +824,7 @@ MonoBehaviour:
     DescriptionQuest: 'Moony Tod challenged me to find the best beer in Areagh. I
       top it, I''m going to find the best beer in the whole Calamonia! '
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -747,6 +834,7 @@ MonoBehaviour:
       need of help of escaping. May the random of magic objects be with you on the
       way!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -756,6 +844,7 @@ MonoBehaviour:
       spots. But they also leave maps to them. Actually, it is not that hard to find
       them. I'm going to be a rich man.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -764,6 +853,7 @@ MonoBehaviour:
     DescriptionQuest: With the portal open, I can finaly go to Hell. There I will
       find Jane's soul and return back. It will not be easy.
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -773,6 +863,7 @@ MonoBehaviour:
       I have to do is to find all the three halves of it in three parts of the world.
       With the Amulet of Armstrong I will be unstopable!
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1
@@ -780,6 +871,7 @@ MonoBehaviour:
     IdQuest: 0
     DescriptionQuest: Literally...
     SecondDescriptionQuest: 'Done:'
+    ButtonText: 
     QuestEndeText: 
     ValueQuest: 1
     TypeValueQuest: 1

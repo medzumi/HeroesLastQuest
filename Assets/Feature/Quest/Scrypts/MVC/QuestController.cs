@@ -107,8 +107,8 @@ namespace Quest.Scrypts.MVC
             
             if (questViewParameters.QuestConfig.IdQuest == questFishId)
             {
-                // OnChangeActive?.Invoke(false, false);
-                SceneManager.LoadScene (sceneName: "Scenes/Fishing");
+                OnChangeActive?.Invoke(false, false);
+                //SceneManager.LoadScene (sceneName: "Scenes/Fishing");
             }
             
         }

@@ -30,6 +30,9 @@ namespace Quest.Scrypts.MVC
 
         [SerializeField]
         private Button closeButton;
+        
+        [SerializeField]
+        private Button questButton;
 
         private void Start()
         {
@@ -39,8 +42,11 @@ namespace Quest.Scrypts.MVC
             _questController.OnRepaintInProgress += RepaintInProgress;
             currentQuestView.OnClickButton += ClickQuest;
             closeButton.onClick.AddListener(Close);
+            questButton.onClick.AddListener(OpenQuestClick);
             _questController.OpenFirstTest();
         }
+
+        
 
         private void OnDisable()
         {
@@ -48,17 +54,24 @@ namespace Quest.Scrypts.MVC
             _questController.OnRepaintCompleted -= RepaintCompleted;
             _questController.OnRepaintInProgress -= RepaintInProgress;
             currentQuestView.OnClickButton -= ClickQuest;
+            questButton.onClick.RemoveListener(OpenQuestClick);
             closeButton.onClick.RemoveListener(Close);
+        }
+        
+        private void OpenQuestClick()
+        {
+            ChangeActive(true, true);
         }
 
         private void Close()
         {
-            // panel.SetActive(false);
-            SceneManager.LoadScene (sceneName: "Scenes/Fishing");
+            panel.SetActive(false);
+            //SceneManager.LoadScene (sceneName: "Scenes/Fishing");
         }
 
         private void ClickQuest(QuestViewParameters obj)
         {
+            questButton.gameObject.SetActive(true);
             _questController.ClickQuest(obj);
         }
 
@@ -109,7 +122,7 @@ namespace Quest.Scrypts.MVC
         private void ChangeActive(bool isActive, bool isCanClose)
         {
             panel.SetActive(isActive);
-            // closeButton.gameObject.SetActive(isCanClose);
+            closeButton.gameObject.SetActive(isCanClose);
         }
     }
 
