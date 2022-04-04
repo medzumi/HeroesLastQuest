@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: FishConfig
   m_EditorClassIdentifier: 
   ThrowSpeed: 0.5
-  MinThrowForce: 200
-  MaxThrowForce: 800
+  MinThrowForce: 400
+  MaxThrowForce: 900
   NormalSpeed: 10
   MinNibble: 1
-  MaxNibble: 10
-  MinTug: 1
-  MaxTug: 3
-  TUnderwater: 5
-  MinDistance: 1
-  MaxDistance: 100
-  TRotate: 10
-  FishingSpeed: 10
-  FishSpeed: 5
+  MaxNibble: 20
+  MinTug: 0.1
+  MaxTug: 4
+  TUnderwater: 0.5
+  MinDistance: 5
+  MaxDistance: 50
+  TRotate: 2
+  FishingSpeed: 4
+  FishSpeed: 6
   MinHold: 0
   MaxHold: 0
-  PlusChance: 0
-  StartChance: 0
-  LStart: 0
-  FinishAnimationSpeed: 2
+  PlusChance: 3
+  StartChance: 5
+  LStart: 15
+  FinishAnimationSpeed: 3
