@@ -40,7 +40,6 @@ namespace Quest.Scrypts.MVC
         {
             Singleton = this;
         }
-
        
         public void OpenQuest(bool isCanClose)
         {
@@ -112,7 +111,7 @@ namespace Quest.Scrypts.MVC
             
         }
         [ContextMenu("OpenFirst")]
-        private void OpenFirstTest()
+        public void OpenFirstTest()
         {
             OpenQuest(false);
         }
