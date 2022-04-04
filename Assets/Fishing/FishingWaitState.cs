@@ -41,7 +41,7 @@ namespace Fishing
             }
         }
 
-        public override void Enter()
+        public override void EnterHandler()
         {
             var list = _fishAsset.listFish;
             var sum = 0f;
@@ -79,7 +79,7 @@ namespace Fishing
             _time = Random.Range(_fisherData.MinNibble, _fisherData.MaxNibble);
         }
 
-        public override void Exit()
+        public override void ExitHandler()
         {
             
         }
@@ -114,14 +114,14 @@ namespace Fishing
             return _returnableKey;
         }
 
-        public override void Enter()
+        public override void EnterHandler()
         {
             _timer = Random.Range(_fisherData.MinTug, _fisherData.MaxTug);
             _coroutine = null;  
             _returnableKey = Key;
         }
 
-        public override void Exit()
+        public override void ExitHandler()
         {
             if (_coroutine != null)
             {
@@ -188,9 +188,21 @@ namespace Fishing
         public string Key => _key;
         public abstract string Update();
 
-        public abstract void Enter();
+        void IState.Enter()
+        {
+            EnterHandler();
+            OnEnter?.Invoke();
+        }
 
-        public abstract void Exit();
+        void IState.Exit()
+        {
+            ExitHandler();
+            OnExit?.Invoke();
+        }
+
+        public abstract void EnterHandler();
+
+        public abstract void ExitHandler();
     }
     
     [Serializable]
@@ -274,7 +286,7 @@ namespace Fishing
                         var floatDirection = (_float.position - _aim.position).normalized;
                         floatDirection.y = 0;
                         var dot = Vector3.Dot(horizontalForward, floatDirection.normalized);
-                        if (dot > -0.2f && dot < 0.2f)
+                        if (dot > -0.1f && dot < 0.1f)
                         {
                             var direction = ( _float.position - _aim.position).normalized;
                             direction.y = 0;
@@ -290,7 +302,7 @@ namespace Fishing
             }
         }
 
-        public override void Enter()
+        public override void EnterHandler()
         {
             _isFailed = false;
             _animator.SetBool(_animationKey, true);
@@ -300,7 +312,7 @@ namespace Fishing
             _fishCoroutine = _fisher.StartCoroutine(FishCoroutine());
         }
 
-        public override void Exit()
+        public override void ExitHandler()
         {
             _animator.SetBool(_animationKey, false);
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
@@ -369,6 +381,9 @@ public class UpState : AbstractState
     [SerializeField] private FishAsset _fishAsset;
     [SerializeField] private Transform _spawnRootTransform;
     [SerializeField] private FisherData _fisherData;
+
+    [SerializeField] private UnityEvent ACTIVATE_E_EVENT_PLS;
+    [SerializeField] private UnityEvent DEACTIVATE_E_EVENT_PLS;
     
     private GameObject _prefab;
     private FishConfig _fishConfig;
@@ -386,18 +401,20 @@ public class UpState : AbstractState
             return Key;
         }
 
+        ACTIVATE_E_EVENT_PLS.Invoke();
         if (Input.GetKeyDown(KeyCode.E))
         {
             FishPopupController.Singleton.AddFish(_fishConfig.FishId);
             QuestController.Singleton.AddFish(_fishConfig.FishId);
             _gameObjectData.SetData("Catched", _gameObjectData.ReadData("Catched", 0) + 1);
+            DEACTIVATE_E_EVENT_PLS.Invoke();
             return _nextKey;
         }
 
         return Key;
     }
 
-    public override void Enter()
+    public override void EnterHandler()
     {
         _id = _gameObjectData.ReadData<int>("FishReward");
         _fishConfig = _fishAsset.listFish[_id];
@@ -406,7 +423,7 @@ public class UpState : AbstractState
         _prefab.transform.localPosition = Vector3.zero;
     }
 
-    public override void Exit()
+    public override void ExitHandler()
     {
         GameObject.Destroy(_prefab);
     }

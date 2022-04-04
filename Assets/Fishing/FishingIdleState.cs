@@ -21,11 +21,13 @@ public class FishingIdleState : AbstractState
         }
         else
         {
+            _swimmer.transform.position = _aim.position;
+            _swimmer.transform.rotation = _aim.rotation;
             return Key;
         }
     }
 
-    public override void Enter()
+    public override void EnterHandler()
     {
         _rod.rotation = _defaultRodRot.rotation;
         _swimmer.constraints = RigidbodyConstraints.FreezePositionY;
@@ -34,7 +36,7 @@ public class FishingIdleState : AbstractState
         _animator.SetBool(_animatorIdleKey, true);
     }
 
-    public override void Exit()
+    public override void ExitHandler()
     {
         _animator.SetBool(_animatorIdleKey, false);
     }

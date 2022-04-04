@@ -15,7 +15,7 @@ public class AnimationState : AbstractState
         return _returnableKey;
     }
 
-    public override void Enter()
+    public override void EnterHandler()
     {
         _returnableKey = Key;
         _animator
@@ -32,7 +32,7 @@ public class AnimationState : AbstractState
         }
     }
 
-    public override void Exit()
+    public override void ExitHandler()
     {
         _animator
             .gameObject
