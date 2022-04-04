@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrowSpeed: 0.5
   MinThrowForce: 200
-  MaxThrowForce: 400
+  MaxThrowForce: 800
   NormalSpeed: 10
   MinNibble: 1
   MaxNibble: 10
