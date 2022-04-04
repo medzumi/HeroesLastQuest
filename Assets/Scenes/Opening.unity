@@ -545,14 +545,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slides:
-  - {fileID: 21300000, guid: 815b1de7e3889cb4682dcf28d59b65bd, type: 3}
-  - {fileID: 21300000, guid: d16411e06ee2f174bb91e79e5dff0586, type: 3}
-  - {fileID: 21300000, guid: 6f0e3dd36f37c41488c62d3adb68be99, type: 3}
-  - {fileID: 21300000, guid: 37f291b48d0c5a840865895f6dd74b22, type: 3}
-  - {fileID: 21300000, guid: 3b44a61943bcdd747bc6ca981572e79e, type: 3}
-  - {fileID: 21300000, guid: 116b65d1b6128b643bf308aec58e7d39, type: 3}
-  - {fileID: 21300000, guid: 5bd61763681b81543883122ef65ffbea, type: 3}
-  - {fileID: 21300000, guid: 8670e04ee49be024d8be983bc1c0f5c5, type: 3}
+  - {fileID: 21300000, guid: a169b07ee324e9947a8b29edc6335500, type: 3}
+  - {fileID: 21300000, guid: 2dcbf3553618f19429cbcd1beffc714a, type: 3}
+  - {fileID: 21300000, guid: 2106c2f7cc4a60341b97cdffe014f5c0, type: 3}
+  - {fileID: 21300000, guid: 3c0c3af9694c74c488e53cc787b71225, type: 3}
+  - {fileID: 21300000, guid: 1c034421c93db6d43b1957ab1ac1c8aa, type: 3}
   currentSlide: {fileID: 530775770}
   interval: 5
   nextScene: Scenes/QuestScene
