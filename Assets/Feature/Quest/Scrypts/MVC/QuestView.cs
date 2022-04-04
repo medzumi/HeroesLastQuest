@@ -38,6 +38,7 @@ namespace Quest.Scrypts.MVC
             _questController.OnRepaintInProgress += RepaintInProgress;
             currentQuestView.OnClickButton += ClickQuest;
             closeButton.onClick.AddListener(Close);
+            _questController.OpenFirstTest();
         }
 
         private void OnDisable()
