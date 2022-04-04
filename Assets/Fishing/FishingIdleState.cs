@@ -21,6 +21,8 @@ public class FishingIdleState : AbstractState
         }
         else
         {
+            _swimmer.transform.position = _aim.position;
+            _swimmer.transform.rotation = _aim.rotation;
             return Key;
         }
     }

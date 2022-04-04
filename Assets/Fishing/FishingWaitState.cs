@@ -286,7 +286,7 @@ namespace Fishing
                         var floatDirection = (_float.position - _aim.position).normalized;
                         floatDirection.y = 0;
                         var dot = Vector3.Dot(horizontalForward, floatDirection.normalized);
-                        if (dot > -0.2f && dot < 0.2f)
+                        if (dot > -0.1f && dot < 0.1f)
                         {
                             var direction = ( _float.position - _aim.position).normalized;
                             direction.y = 0;
