@@ -389,6 +389,7 @@ public class UpState : AbstractState
         if (Input.GetKeyDown(KeyCode.E))
         {
             FishPopupController.Singleton.AddFish(_fishConfig.FishId);
+            QuestController.Singleton.AddFish(_fishConfig.FishId);
             _gameObjectData.SetData("Catched", _gameObjectData.ReadData("Catched", 0) + 1);
             return _nextKey;
         }
