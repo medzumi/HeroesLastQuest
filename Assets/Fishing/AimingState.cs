@@ -14,6 +14,7 @@ public class AimingState : IState
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private float _deltaThrow = 0.2f;
     [SerializeField] private GameObjectData _gameObjectData;
+    [SerializeField] private Rigidbody _swimmer;
 
     private float _currentThrow = 0;
     private bool _isReverse = false;
@@ -30,6 +31,7 @@ public class AimingState : IState
         else
         {
             _currentThrow += (_isReverse? - _deltaThrow : _deltaThrow) * Time.deltaTime;
+            SetViewValue(_currentThrow);
             if (_currentThrow > 1)
             {
                 _isReverse = true;
@@ -57,6 +59,7 @@ public class AimingState : IState
 
     public void Enter()
     {
+        _swimmer.constraints = RigidbodyConstraints.FreezePositionY;
         _throwGameObjectView.SetActive(true);
         _currentThrow = 0;
         _isReverse = false;

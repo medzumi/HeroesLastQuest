@@ -8,6 +8,8 @@ public class FishingIdleState : IState
     [SerializeField] private string _nextStateKey;
     [SerializeField] private Animator _animator;
     [SerializeField] private string _animatorIdleKey;
+    [SerializeField] private Rigidbody _swimmer;
+    [SerializeField] Transform _aim;
     public string Key => _key;
     
     public string Update()
@@ -24,6 +26,9 @@ public class FishingIdleState : IState
 
     public void Enter()
     {
+        _swimmer.constraints = RigidbodyConstraints.FreezePositionY;
+        _swimmer.position = _aim.position;
+        _swimmer.rotation = _aim.rotation;
         _animator.SetBool(_animatorIdleKey, true);
     }
 

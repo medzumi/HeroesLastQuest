@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using Fishing;
 using UnityEngine;
 
 [Serializable]
@@ -17,18 +19,24 @@ public class ThrowingState : IState
     [SerializeField] private string _resetStateKey;
 
     [SerializeField] private GameObject _aim;
-    [SerializeField] private GameObject _swimmer;
+    [SerializeField] private Rigidbody _swimmer;
     [SerializeField] private GameObjectData _gameObjectData;
 
+    [SerializeField] private float _minForce;
+    [SerializeField] private float _maxForce;
+    
     private int _layerId;
     private ThrowingStates _state;
-    
+
+    private Coroutine _lengthCoroutine;
     public string Key => _key;
     public string Update()
     {
         switch (_state)
         {
             case ThrowingStates.Water :
+                _swimmer.constraints = RigidbodyConstraints.FreezeAll;
+                _swimmer.rotation = Quaternion.identity;
                 return _nextStateKey;
             case ThrowingStates.Error:
             case ThrowingStates.Earth:
@@ -39,13 +47,17 @@ public class ThrowingState : IState
 
     public void Enter()
     {
-        _layerId = LayerMask.GetMask("Water");
-        _swimmer.SetActive(true);
-        _swimmer.GetOrCreateComponent<TriggerEnterHandler>()
+        _swimmer.constraints = RigidbodyConstraints.None;
+        _layerId = LayerMask.NameToLayer("Water");
+        _swimmer.gameObject.SetActive(true);
+        _swimmer.gameObject.GetOrCreateComponent<CollisionEnterHandler>()
             .OnTrigger += TriggerEnterHandler;
-        _swimmer.GetOrCreateComponent<TriggerExitHandler>()
+        _swimmer.gameObject.GetOrCreateComponent<TriggerExitHandler>()
             .OnTrigger += TriggerExitHandler;
         _state = ThrowingStates.Flying;
+        var forcePercentage = _gameObjectData.ReadData<float>("ThrowForce");
+        _swimmer.position = _aim.transform.position;
+        _swimmer.AddForce(_aim.transform.forward * (_minForce + (_maxForce - _minForce) * forcePercentage));
     }
 
     private void TriggerExitHandler(GameObject obj)
@@ -63,9 +75,9 @@ public class ThrowingState : IState
 
     public void Exit()
     {
-        _swimmer.GetOrCreateComponent<TriggerEnterHandler>()
+        _swimmer.gameObject.GetOrCreateComponent<CollisionEnterHandler>()
             .OnTrigger -= TriggerEnterHandler;
-        _swimmer.GetOrCreateComponent<TriggerExitHandler>()
+        _swimmer.gameObject.GetOrCreateComponent<TriggerExitHandler>()
             .OnTrigger -= TriggerExitHandler;
     }
 }

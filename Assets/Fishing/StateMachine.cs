@@ -15,6 +15,7 @@ public class StateMachine
             _states[state.Key] = state;
         }
         _currentState = _startState;
+        _currentState.Enter();
     }
 
     public void Update()

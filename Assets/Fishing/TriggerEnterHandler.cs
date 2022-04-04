@@ -10,3 +10,13 @@ public class TriggerEnterHandler : MonoBehaviour
         OnTrigger?.Invoke(other.gameObject);
     }
 }
+
+public class CollisionEnterHandler : MonoBehaviour
+{
+    public event Action<GameObject> OnTrigger;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        OnTrigger?.Invoke(collision.gameObject);
+    }
+}

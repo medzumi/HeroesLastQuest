@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using Fishing;
 using UnityEngine;
 
 public class Fisher : MonoBehaviour
@@ -9,6 +9,8 @@ public class Fisher : MonoBehaviour
     [SerializeField] private FishingIdleState _fishingIdleState;
     [SerializeField] private AimingState _aimingState;
     [SerializeField] private ThrowingState _throwingState;
+    [SerializeField] private FishingWaitState _fishingWaitState;
+    [SerializeField] private FishingState _fishingState;
     [SerializeField] private List<AnimationState> _animationStates;
 
     private void Awake()
@@ -18,6 +20,8 @@ public class Fisher : MonoBehaviour
             _fishingIdleState,
             _aimingState,
             _throwingState,
+            _fishingWaitState,
+            _fishingState
         };
         stateList.AddRange(_animationStates);
         _stateMachine = new StateMachine(_fishingIdleState, stateList);
@@ -31,57 +35,5 @@ public class Fisher : MonoBehaviour
     private void Update()
     {
         _stateMachine.Update();
-    }
-    
-    public partial class AnimatorListener : MonoBehaviour
-    {
-        public event Action<string> OnAnimatorFire;
-
-        void FireAnimatorKey(string key)
-        {
-            OnAnimatorFire?.Invoke(key);
-        }
-    }
-    
-    [Serializable]
-    public class AnimationState : IState
-    {
-        [SerializeField] private Animator _animator;
-        [SerializeField] private string _endAnimationKey;
-        [SerializeField] private string _nextKey;
-        [SerializeField] private string _key;
-
-        private string _returnableKey;
-        
-        public string Key => _key;
-        public string Update()
-        {
-            return _returnableKey;
-        }
-
-        public void Enter()
-        {
-            _returnableKey = _key;
-            _animator
-                .gameObject
-                .GetOrCreateComponent<AnimatorListener>()
-                .OnAnimatorFire += AnimatorFireHandler;
-        }
-
-        private void AnimatorFireHandler(string obj)
-        {
-            if (string.Equals(obj, _endAnimationKey))
-            {
-                _returnableKey = _nextKey;
-            }
-        }
-
-        public void Exit()
-        {
-            _animator
-                .gameObject
-                .GetOrCreateComponent<AnimatorListener>()
-                .OnAnimatorFire -= AnimatorFireHandler;
-        }
     }
 }
