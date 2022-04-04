@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ namespace Quest.Scrypts.MVC
     public class QuestView : MonoBehaviour
     {
         private QuestController _questController;
+
+        public static bool IsEnabledInput = false;
         
         [SerializeField]
         private GameObject panel;
@@ -34,6 +37,9 @@ namespace Quest.Scrypts.MVC
         [SerializeField]
         private Button questButton;
 
+        public UnityEvent OnOpen;
+        public UnityEvent OnClosed;
+
         private void Start()
         {
             _questController = QuestController.Singleton;
@@ -46,9 +52,8 @@ namespace Quest.Scrypts.MVC
             _questController.OpenFirstTest();
         }
 
-        
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             _questController.OnChangeActive -= ChangeActive;
             _questController.OnRepaintCompleted -= RepaintCompleted;
@@ -57,7 +62,15 @@ namespace Quest.Scrypts.MVC
             questButton.onClick.RemoveListener(OpenQuestClick);
             closeButton.onClick.RemoveListener(Close);
         }
-        
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                OpenQuestClick();
+            }
+        }
+
         private void OpenQuestClick()
         {
             ChangeActive(true, true);
@@ -66,6 +79,8 @@ namespace Quest.Scrypts.MVC
         private void Close()
         {
             panel.SetActive(false);
+            IsEnabledInput = true;
+            OnClosed?.Invoke();   
             //SceneManager.LoadScene (sceneName: "Scenes/Fishing");
         }
 
@@ -122,6 +137,16 @@ namespace Quest.Scrypts.MVC
         private void ChangeActive(bool isActive, bool isCanClose)
         {
             panel.SetActive(isActive);
+            if (isActive)
+            {
+                OnOpen?.Invoke();
+            }
+            else
+            {
+                OnClosed?.Invoke();
+            }
+
+            IsEnabledInput = !isActive;
             closeButton.gameObject.SetActive(isCanClose);
         }
     }

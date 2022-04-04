@@ -30,7 +30,7 @@ namespace Fishing
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
                 {
                     return _resetKey;
                 }
@@ -107,7 +107,7 @@ namespace Fishing
                 _coroutine = _fisher.StartCoroutine(UnderwaterEnumerator());
             }
 
-            if (_timer > 0 && Input.GetKeyDown(KeyCode.Mouse0))
+            if (_timer > 0 && Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
             {
                 return _resetKey;
             }
@@ -164,7 +164,7 @@ namespace Fishing
             while (time < _fisherData.TUnderwater)
             {
                 time += Time.deltaTime;
-                if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
                 {
                     isPressed = true;
                     _returnableKey = _catchKey;
@@ -240,17 +240,6 @@ namespace Fishing
             }
             else
             {
-                var mouseRot = Input.GetAxis("Mouse X");
-
-                var euler = _rod.localEulerAngles;
-                euler.y += mouseRot;
-                if (euler.y > 180)
-                {
-                    euler.y -= 360f;
-                }
-                euler.y = Mathf.Clamp(euler.y, -90f, 90f);
-                _rod.localEulerAngles = euler;
-
                 var dist = _aim.transform.position - _float.position;
                 dist.y = 0;
                 if (dist.magnitude > _fisherData.MaxDistance)
@@ -264,7 +253,7 @@ namespace Fishing
                         return _nextKey;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.Mouse0))
+                    if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
                     {
                         _criticalCoroutine = _fisher.StartCoroutine(CriticalEnumerator());
                     }
@@ -306,7 +295,6 @@ namespace Fishing
         {
             _isFailed = false;
             _animator.SetBool(_animationKey, true);
-            Cursor.lockState = CursorLockMode.Locked;
             _fishSpeed = _fisherData.FishSpeed;
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
             _fishCoroutine = _fisher.StartCoroutine(FishCoroutine());
@@ -316,7 +304,6 @@ namespace Fishing
         {
             _animator.SetBool(_animationKey, false);
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
-            Cursor.lockState = CursorLockMode.None;
             if (_fishCoroutine != null)
             {
                 _fisher.StopCoroutine(_fishCoroutine);
@@ -402,7 +389,7 @@ public class UpState : AbstractState
         }
 
         ACTIVATE_E_EVENT_PLS.Invoke();
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && QuestView.IsEnabledInput)
         {
             FishPopupController.Singleton.AddFish(_fishConfig.FishId);
             QuestController.Singleton.AddFish(_fishConfig.FishId);

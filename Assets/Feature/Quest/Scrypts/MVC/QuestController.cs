@@ -37,16 +37,21 @@ namespace Quest.Scrypts.MVC
         [SerializeField]
         private int idEndFish = 4;
 
+        private readonly List<Configs.Quest> _inProgressQuests = new List<Configs.Quest>();
+        private readonly List<Configs.Quest> _completeQuests = new List<Configs.Quest>();
+
         private void Awake()
         {
             Singleton = this;
+            _inProgressQuests.AddRange(questAsset.InProgressQuest);
+            _completeQuests.AddRange(questAsset.Completed);
         }
        
         public void OpenQuest(bool isCanClose)
         {
             var listCompleted = new List<QuestViewParameters>();
 
-            foreach (var quest in questAsset.Completed)
+            foreach (var quest in _completeQuests)
             {
                 var parameters = new QuestViewParameters();
                 parameters.QuestConfig = quest;
@@ -56,7 +61,7 @@ namespace Quest.Scrypts.MVC
             
             var listInProgress = new List<QuestViewParameters>();
             
-            foreach (var quest in questAsset.InProgressQuest)
+            foreach (var quest in _inProgressQuests)
             {
                 var parameters = new QuestViewParameters();
                 if (quest.IdQuest == questExitId)
@@ -84,10 +89,14 @@ namespace Quest.Scrypts.MVC
             if (idEndFish == idFish && _currentFishValue == 0)
             {
                 _currentFishValue = 1;
-                foreach (var quest in questAsset.InProgressQuest)
+                for (int i = 0; i < _inProgressQuests.Count; i++)
                 {
+                    var quest = _inProgressQuests[i];
                     if (quest.IdQuest == questFishId)
                     {
+                        _inProgressQuests.Remove(quest);
+                        _completeQuests.Add(quest);
+                        OpenQuest(true);
                         QuestPopupController.Singleton.QuestEnded(quest); 
                         continue;
                     }

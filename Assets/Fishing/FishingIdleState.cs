@@ -1,5 +1,6 @@
 ﻿using System;
 using Fishing;
+using Quest.Scrypts.MVC;
 using UnityEngine;
 
 [Serializable]
@@ -15,7 +16,7 @@ public class FishingIdleState : AbstractState
 
     public override string Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
         {
             return _nextStateKey;
         }
@@ -39,5 +40,24 @@ public class FishingIdleState : AbstractState
     public override void ExitHandler()
     {
         _animator.SetBool(_animatorIdleKey, false);
+    }
+}
+
+[Serializable]
+public class CostylState : AbstractState
+{
+    public override string Update()
+    {
+        return Key;
+    }
+
+    public override void EnterHandler()
+    {
+        
+    }
+
+    public override void ExitHandler()
+    {
+        
     }
 }

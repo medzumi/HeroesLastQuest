@@ -1,5 +1,6 @@
 ﻿using System;
 using Fishing;
+using Quest.Scrypts.MVC;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,13 +16,15 @@ public class AimingState : AbstractState
     [SerializeField] private FisherData _fisherData;
     [SerializeField] private GameObjectData _gameObjectData;
     [SerializeField] private Rigidbody _swimmer;
+    [SerializeField] private Transform _aim;
 
     private float _currentThrow = 0;
     private bool _isReverse = false;
 
     public override string Update()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        _swimmer.transform.position = _aim.position;
+        if (Input.GetKeyUp(KeyCode.Mouse0) && QuestView.IsEnabledInput)
         {
             _gameObjectData.SetData("ThrowForce", _currentThrow);
             return _nextStateKey;

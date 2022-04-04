@@ -15,6 +15,7 @@ public class Fisher : MonoBehaviour
     [SerializeField] private UpState _upState;
     [SerializeField] private List<AnimationState> _animationStates;
     [SerializeField] private List<DebugState> _debugStates;
+    [SerializeField] private CostylState _costylState;
 
     private void Awake()
     {
@@ -26,11 +27,17 @@ public class Fisher : MonoBehaviour
             _fishingWaitState,
             _fishingState,
             _catchState,
-            _upState
+            _upState,
+            _costylState
         };
         stateList.AddRange(_animationStates);
         stateList.AddRange(_debugStates);
         _stateMachine = new StateMachine(_fishingIdleState, stateList);
+    }
+
+    public void SetState(string stateId)
+    {
+        _stateMachine.SetState(stateId);
     }
 
     private void OnEnable()

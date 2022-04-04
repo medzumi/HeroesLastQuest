@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using Fishing;
+using Quest.Scrypts.MVC;
 using UnityEngine;
 
 [Serializable]
@@ -39,6 +40,11 @@ public class ThrowingState : AbstractState
             case ThrowingStates.Earth:
                 return _resetStateKey;
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
+        {
+            return _resetStateKey;
+        }
         return Key;
     }
 
@@ -67,6 +73,10 @@ public class ThrowingState : AbstractState
         if ((_layerId & obj.layer) > 0)
         {
             _state = ThrowingStates.Water;
+        }
+        else if ((LayerMask.NameToLayer("Ground") & obj.layer) > 0)
+        {
+            _state = ThrowingStates.Earth;
         }
     }
 
