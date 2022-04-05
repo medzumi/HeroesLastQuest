@@ -253,7 +253,7 @@ namespace Fishing
                         return _nextKey;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput)
+                    if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput && _criticalCoroutine == null)
                     {
                         _criticalCoroutine = _fisher.StartCoroutine(CriticalEnumerator());
                     }
@@ -294,6 +294,10 @@ namespace Fishing
         public override void EnterHandler()
         {
             _isFailed = false;
+            if (Input.GetKeyDown(KeyCode.Mouse0) && QuestView.IsEnabledInput && _criticalCoroutine == null)
+            {
+                _criticalCoroutine = _fisher.StartCoroutine(CriticalEnumerator());
+            }
             _animator.SetBool(_animationKey, true);
             _fishSpeed = _fisherData.FishSpeed;
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
