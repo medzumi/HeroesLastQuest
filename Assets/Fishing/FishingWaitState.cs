@@ -332,7 +332,7 @@ namespace Fishing
             _rodMaterial.SetColor(_materialColorKey, _warningColor);
             yield return new WaitForSeconds(conf.MaxHold - normalTime);
             _rodMaterial.SetColor(_materialColorKey, _dangerColor);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.6f);
             _isFailed = true;
             _criticalCoroutine = null;
 
