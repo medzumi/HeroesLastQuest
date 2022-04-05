@@ -15,19 +15,25 @@ MonoBehaviour:
   InProgressQuest:
   - NameQuest: Every journey comes to an end
     IdQuest: 1
-    DescriptionQuest: 
-    SecondDescriptionQuest: "\u041F\u0440\u043E\u0439\u0434\u0435\u043D\u043E"
+    DescriptionQuest: The world can sleep peacefully again. I have finally defeated
+      the Demon Lord. Now the only thing left to do is to report to the King and
+      receive my reward. But before i must make sure that all my things are done.  
+      ATTENTION! After completing this quest all the other quests in progress will
+      be inaccessible.
+    SecondDescriptionQuest: Complited
     ButtonText: Finish the game
     QuestEndeText: 
     ValueQuest: 100
     TypeValueQuest: 0
-  - NameQuest: 
+  - NameQuest: 'Wanna taste something legendary? '
     IdQuest: 2
-    DescriptionQuest: "\u041B\u0438\u0448\u0438 \u0440\u044B\u0431\u0443 \u0436\u0438\u0437\u043D\u0438"
-    SecondDescriptionQuest: "\u043A\u0440\u044F"
-    ButtonText: To fish
-    QuestEndeText: "\u0412\u044B \u043F\u043E\u0439\u043C\u0430\u043B\u0438 \u0440\u044B\u0431\u043A\u0443
-      \u0445\u0443\u0435\u044E\u0431\u043A\u0443 \u0438 \u0432\u0441\u0435 \u043F\u0438\u0437\u0434\u0430"
+    DescriptionQuest: 'There are many types of fish: small, big, chonky and thin.
+      But I want something different - something unique. Like a legendary fish, for
+      example. But first I must try all the other types of fish to appreciate The
+      One truly. All in all, I''m gonna catch them all.'
+    SecondDescriptionQuest: 
+    ButtonText: To fishing
+    QuestEndeText: You have caught it!
     ValueQuest: 1
     TypeValueQuest: 1
   Completed:

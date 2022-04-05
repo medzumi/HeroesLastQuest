@@ -24,7 +24,7 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 50
   TRotate: 2
-  FishingSpeed: 4
+  FishingSpeed: 5
   FishSpeed: 6
   MinHold: 0
   MaxHold: 0

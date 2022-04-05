@@ -67,7 +67,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: c4fc93ac2a21fd941bbd2e8ee3be9452, type: 3}
+    Prefab: {fileID: 9105366418491747848, guid: 2235686c84661db4c952661ba96767b9, type: 3}
     IsLegendary: 0
   - NameFish: Tiny guy
     FishId: 7
@@ -76,7 +76,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 2acc1a89a1c4c264586af1085fabcf85, type: 3}
+    Prefab: {fileID: 6830543342953647596, guid: 5ffd20995f1fde44982ec9f4064a7296, type: 3}
     IsLegendary: 0
   - NameFish: Blob blob
     FishId: 8
@@ -85,7 +85,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 620dce229b75f624da8dd256128701aa, type: 3}
+    Prefab: {fileID: 957187477575189875, guid: 84174d27ae7f65e4eb1bf4d59715bd59, type: 3}
     IsLegendary: 0
   - NameFish: Blub blub
     FishId: 9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 3231e03d21b93ae40b2d0c58e66690b1, type: 3}
+    Prefab: {fileID: 5542531763412666334, guid: 1191c3e2d00dd4646a9f8a3e9e787916, type: 3}
     IsLegendary: 0
   - NameFish: A fish
     FishId: 10
@@ -103,7 +103,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 08fe471bde09da746a7c420569746482, type: 3}
+    Prefab: {fileID: 6330289452639042070, guid: a627626a8d8f14245b5b6b34dcbcfc54, type: 3}
     IsLegendary: 0
   - NameFish: The fish
     FishId: 11
@@ -112,7 +112,7 @@ MonoBehaviour:
     ChanceWeight: 25
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 88da486e8060bef4fa12f1813e678e1e, type: 3}
+    Prefab: {fileID: 1346349849805471267, guid: e180086533dc5524faa4d7e9b0a91499, type: 3}
     IsLegendary: 0
   - NameFish: Zelda
     FishId: 12
@@ -121,7 +121,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: bbea513b5ad8aea4ba7d4e3830d5db2e, type: 3}
+    Prefab: {fileID: 526843736824347463, guid: 846c615c7aa825841919e6b2e2afa2aa, type: 3}
     IsLegendary: 0
   - NameFish: Link
     FishId: 13
@@ -130,7 +130,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 06f8e144c7bbe3c4ca4c2dae06e5ba57, type: 3}
+    Prefab: {fileID: 513123568448024730, guid: 9922401231e4e9d44a3c82279e733414, type: 3}
     IsLegendary: 0
   - NameFish: Leo
     FishId: 14
@@ -139,7 +139,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: b635efed1eb5dbb4390dd5c78959322b, type: 3}
+    Prefab: {fileID: 6387030527418466631, guid: 95a3dd9532f49414ba69857ccdecba48, type: 3}
     IsLegendary: 0
   - NameFish: The Chosen One
     FishId: 15
@@ -148,7 +148,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 9671371f7cb29014bbd2278cfffc4d4c, type: 3}
+    Prefab: {fileID: 77105736613520034, guid: f5f80c026e1f8c4468b1523c6dc6fb28, type: 3}
     IsLegendary: 0
   - NameFish: Suspicious tuna
     FishId: 16
@@ -157,7 +157,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: acd03fd34eceb014dae88c48cbc84a46, type: 3}
+    Prefab: {fileID: 814561277808089608, guid: 17659178424c5344fbf265f1da48639b, type: 3}
     IsLegendary: 0
   - NameFish: Trust worthy tuna
     FishId: 17
@@ -166,7 +166,7 @@ MonoBehaviour:
     ChanceWeight: 15
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 9680e01e1d8d5fe4090a4ecb3d4f4c73, type: 3}
+    Prefab: {fileID: 1840746933808384238, guid: 3246a72dfbc70fb47aca438cdbfb9d51, type: 3}
     IsLegendary: 0
   - NameFish: Kvas bass
     FishId: 18
@@ -175,7 +175,7 @@ MonoBehaviour:
     ChanceWeight: 10
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: ea5ed12258c5aeb40a9b42badc39973a, type: 3}
+    Prefab: {fileID: 5044026962451744829, guid: 444ec25ab927f0048918a032a90c619e, type: 3}
     IsLegendary: 0
   - NameFish: Koi koi koi
     FishId: 19
@@ -184,7 +184,7 @@ MonoBehaviour:
     ChanceWeight: 10
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 137573f58ad338449b3d7fcc24418b82, type: 3}
+    Prefab: {fileID: 7926115339848345219, guid: d07131a0b3193034eaab224f6f76e4a4, type: 3}
     IsLegendary: 0
   - NameFish: Sakana
     FishId: 20
@@ -193,16 +193,7 @@ MonoBehaviour:
     ChanceWeight: 10
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 6a562575e6a6b1d4583f031d9297574e, type: 3}
-    IsLegendary: 0
-  - NameFish: Perch
-    FishId: 21
-    StarFish: 4
-    Rare: 0
-    ChanceWeight: 10
-    MinHold: 4
-    MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 6a562575e6a6b1d4583f031d9297574e, type: 3}
+    Prefab: {fileID: 4485488574276554860, guid: 420a636280c05a64ead644943c53b279, type: 3}
     IsLegendary: 0
   - NameFish: Sturgeon
     FishId: 22
@@ -211,7 +202,7 @@ MonoBehaviour:
     ChanceWeight: 10
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: c43df2043a83bf74b9108b7185be2fd7, type: 3}
+    Prefab: {fileID: 2289418899265471937, guid: fb54329f97537a54b8a6ebd0f3d1afdd, type: 3}
     IsLegendary: 0
   - NameFish: Catfish
     FishId: 23
@@ -220,7 +211,7 @@ MonoBehaviour:
     ChanceWeight: 10
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 3f0bf05f49d51e54eb0b8789ad3d6cb6, type: 3}
+    Prefab: {fileID: 6790060008366645860, guid: d410fb70918b3894baab0c4aaf312dce, type: 3}
     IsLegendary: 0
   - NameFish: Trout
     FishId: 24
@@ -229,7 +220,7 @@ MonoBehaviour:
     ChanceWeight: 5
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 0d831f2a63da1014b9f807f7dd828b19, type: 3}
+    Prefab: {fileID: 3539699001653517025, guid: 9a1b9e91c0953f549b5c1af4d10a5afa, type: 3}
     IsLegendary: 0
   - NameFish: The fish of life
     FishId: 25
@@ -238,14 +229,14 @@ MonoBehaviour:
     ChanceWeight: 5
     MinHold: 4
     MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: 5a451d43def71f045b9697ff58db1759, type: 3}
+    Prefab: {fileID: 835981129312999504, guid: 1e62ab8a3fc862240a223c9dfc6825b7, type: 3}
     IsLegendary: 0
   - NameFish: Hideo Kojima
     FishId: 25
     StarFish: 5
     Rare: 0
     ChanceWeight: 5
-    MinHold: 4
-    MaxHold: 4
-    Prefab: {fileID: 919132149155446097, guid: ec6957aa34e9e9345b57b324a9ccc370, type: 3}
+    MinHold: 1
+    MaxHold: 2
+    Prefab: {fileID: 6897747125968596813, guid: c287e9e30484e0445955de7b114bb838, type: 3}
     IsLegendary: 1
