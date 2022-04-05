@@ -18,7 +18,7 @@ public class CameraRotator : MonoBehaviour
     private void Update()
     {
         var angle = transform.localEulerAngles;
-        angle.x += Input.GetAxis("Mouse Y");
+        angle.x -= Input.GetAxis("Mouse Y");
         angle.y += Input.GetAxis("Mouse X");
         angle.x %= 360f;
         angle.y %= 360f;

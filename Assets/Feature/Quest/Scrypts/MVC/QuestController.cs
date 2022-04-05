@@ -49,6 +49,13 @@ namespace Quest.Scrypts.MVC
        
         public void OpenQuest(bool isCanClose)
         {
+            RefreshQuests();
+            OnChangeActive?.Invoke(true, isCanClose);
+            
+        }
+
+        private void RefreshQuests()
+        {
             var listCompleted = new List<QuestViewParameters>();
 
             foreach (var quest in _completeQuests)
@@ -78,7 +85,6 @@ namespace Quest.Scrypts.MVC
                 
                 listInProgress.Add(parameters);
             }
-            OnChangeActive?.Invoke(true, isCanClose);
             OnRepaintCompleted?.Invoke(listCompleted);
             OnRepaintInProgress?.Invoke(listInProgress);
         }
@@ -96,7 +102,7 @@ namespace Quest.Scrypts.MVC
                     {
                         _inProgressQuests.Remove(quest);
                         _completeQuests.Add(quest);
-                        OpenQuest(true);
+                        RefreshQuests();
                         QuestPopupController.Singleton.QuestEnded(quest); 
                         continue;
                     }
