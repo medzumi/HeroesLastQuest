@@ -23,6 +23,7 @@ public class ThrowingState : AbstractState
     [SerializeField] private GameObjectData _gameObjectData;
 
     [SerializeField] private FisherData _fisherData;
+    [SerializeField] private AudioSource _inSource;
 
     private int _layerId;
     private ThrowingStates _state;
@@ -35,6 +36,7 @@ public class ThrowingState : AbstractState
             case ThrowingStates.Water :
                 _swimmer.constraints = RigidbodyConstraints.FreezeAll;
                 _swimmer.rotation = Quaternion.identity;
+                _inSource.Play();
                 return _nextStateKey;
             case ThrowingStates.Error:
             case ThrowingStates.Earth:

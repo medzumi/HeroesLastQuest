@@ -224,6 +224,8 @@ namespace Fishing
         [SerializeField] private Color _warningColor = Color.yellow;
         [SerializeField] private Color _dangerColor = Color.red;
         [SerializeField] private string _materialColorKey = "";
+        [SerializeField] private AudioSource _fishplaySource;
+        [SerializeField] private AudioSource _fishrodTensionSource;
 
         private Coroutine _fishCoroutine;
         private Coroutine _fisherCoroutine;
@@ -277,6 +279,7 @@ namespace Fishing
                         var dot = Vector3.Dot(horizontalForward, floatDirection.normalized);
                         if (dot > -0.1f && dot < 0.1f)
                         {
+                            _fishrodTensionSource.Play();
                             var direction = ( _float.position - _aim.position).normalized;
                             direction.y = 0;
                             _float.position += (-direction) * Time.deltaTime * _fisherData.FishingSpeed;
@@ -298,6 +301,7 @@ namespace Fishing
             {
                 _criticalCoroutine = _fisher.StartCoroutine(CriticalEnumerator());
             }
+            _fishplaySource.Play();
             _animator.SetBool(_animationKey, true);
             _fishSpeed = _fisherData.FishSpeed;
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
@@ -306,6 +310,8 @@ namespace Fishing
 
         public override void ExitHandler()
         {
+            _fishplaySource.Stop();
+            _fishrodTensionSource.Stop();
             _animator.SetBool(_animationKey, false);
             _rodMaterial.SetColor(_materialColorKey, _normalColor);
             if (_fishCoroutine != null)
