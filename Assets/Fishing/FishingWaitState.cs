@@ -277,7 +277,7 @@ namespace Fishing
                         var floatDirection = (_float.position - _aim.position).normalized;
                         floatDirection.y = 0;
                         var dot = Vector3.Dot(horizontalForward, floatDirection.normalized);
-                        if (dot > -0.1f && dot < 0.1f)
+                        if (dot > -0.15f && dot < 0.15f)
                         {
                             _fishrodTensionSource.Play();
                             var direction = ( _float.position - _aim.position).normalized;
@@ -340,9 +340,9 @@ namespace Fishing
             var normalTime = Random.Range(conf.MinHold, conf.MaxHold);
             yield return new WaitForSeconds(normalTime);
             _rodMaterial.SetColor(_materialColorKey, _warningColor);
-            yield return new WaitForSeconds(conf.MaxHold - normalTime);
+            yield return new WaitForSeconds(conf.Hold);
             _rodMaterial.SetColor(_materialColorKey, _dangerColor);
-            yield return new WaitForSeconds(0.6f);
+            yield return new WaitForSeconds(conf.SuperMaxHold);
             _isFailed = true;
             _criticalCoroutine = null;
 

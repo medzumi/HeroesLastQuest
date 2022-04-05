@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Quest.Scrypts.MVC
 {
@@ -22,6 +23,8 @@ namespace Quest.Scrypts.MVC
         public float ChanceWeight;
         public float MinHold;
         public float MaxHold;
+        public float SuperMaxHold = 1f;
+        public float Hold = 1f;
         public GameObject Prefab;
         public bool IsLegendary = false;
     }
